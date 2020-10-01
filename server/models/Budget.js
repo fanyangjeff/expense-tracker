@@ -12,6 +12,10 @@ const BudgetModel = mongoose.Schema({
     amount: {
         type: Number,
         required: [true, 'amount has to be a number']
+    },
+    expense: {
+        type: Boolean,
+        required: [true, 'need to choose either expense or income']
     }
 })
 
